@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NomineesComponent } from './nominees/nominees.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
+  standalone: true, // standalone component
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [NomineesComponent] // Import the NomineesComponent directly
 })
 export class AppComponent {
-  title = 'voting-app';
+  title = 'voting-app-angular20';
 }
